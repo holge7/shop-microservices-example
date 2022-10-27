@@ -1,0 +1,10 @@
+com\shop\productservice\mapper\Mapper.class
+com\shop\productservice\service\ProductService.class
+com\shop\productservice\dto\ProductRequestDTO.class
+com\shop\productservice\util\ApiResponse.class
+com\shop\productservice\model\repository\ProductRepository.class
+com\shop\productservice\mapper\ProductMapper.class
+com\shop\productservice\ProductServiceApplication.class
+com\shop\productservice\controller\ProductController.class
+com\shop\productservice\dto\ProductResponseDTO.class
+com\shop\productservice\model\Product.class

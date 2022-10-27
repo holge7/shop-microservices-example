@@ -1,0 +1,6 @@
+com\shop\inventoryservice\model\Inventory.class
+com\shop\inventoryservice\util\ApiResponse.class
+com\shop\inventoryservice\InventoryServiceApplication.class
+com\shop\inventoryservice\service\InventoryService.class
+com\shop\inventoryservice\repository\InventoryRepository.class
+com\shop\inventoryservice\controller\InventoryController.class

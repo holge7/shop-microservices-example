@@ -1,0 +1,10 @@
+D:\ProgrammingEnviroment\Spring\MicroservicesExample\microservice-shop\product-servicee\src\main\java\com\shop\productservice\ProductServiceApplication.java
+D:\ProgrammingEnviroment\Spring\MicroservicesExample\microservice-shop\product-servicee\src\main\java\com\shop\productservice\util\ApiResponse.java
+D:\ProgrammingEnviroment\Spring\MicroservicesExample\microservice-shop\product-servicee\src\main\java\com\shop\productservice\model\Product.java
+D:\ProgrammingEnviroment\Spring\MicroservicesExample\microservice-shop\product-servicee\src\main\java\com\shop\productservice\mapper\Mapper.java
+D:\ProgrammingEnviroment\Spring\MicroservicesExample\microservice-shop\product-servicee\src\main\java\com\shop\productservice\controller\ProductController.java
+D:\ProgrammingEnviroment\Spring\MicroservicesExample\microservice-shop\product-servicee\src\main\java\com\shop\productservice\dto\ProductRequestDTO.java
+D:\ProgrammingEnviroment\Spring\MicroservicesExample\microservice-shop\product-servicee\src\main\java\com\shop\productservice\model\repository\ProductRepository.java
+D:\ProgrammingEnviroment\Spring\MicroservicesExample\microservice-shop\product-servicee\src\main\java\com\shop\productservice\dto\ProductResponseDTO.java
+D:\ProgrammingEnviroment\Spring\MicroservicesExample\microservice-shop\product-servicee\src\main\java\com\shop\productservice\mapper\ProductMapper.java
+D:\ProgrammingEnviroment\Spring\MicroservicesExample\microservice-shop\product-servicee\src\main\java\com\shop\productservice\service\ProductService.java

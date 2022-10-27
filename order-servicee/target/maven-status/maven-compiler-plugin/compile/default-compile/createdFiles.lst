@@ -1,0 +1,12 @@
+com\shop\orderservice\dto\OrderRequestDTO.class
+com\shop\orderservice\repository\OrderRepository.class
+com\shop\orderservice\model\Order.class
+com\shop\orderservice\service\OrderService.class
+com\shop\orderservice\dto\OrderLineItemsListDTO.class
+com\shop\orderservice\dto\OrderResponseDTO.class
+com\shop\orderservice\model\OrderLineItems.class
+com\shop\orderservice\OrderServiceApplication.class
+com\shop\orderservice\controller\OrderContoller.class
+com\shop\orderservice\mapper\OrderMapper.class
+com\shop\orderservice\mapper\Mapper.class
+com\shop\orderservice\util\ApiResponse.class
