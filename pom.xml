@@ -18,6 +18,7 @@
   	<module>order-servicee</module>
   	<module>inventory-servicee</module>
   	<module>discovery-server</module>
+  	<module>api-gateway</module>
   </modules>
   
   	<dependencyManagement>
