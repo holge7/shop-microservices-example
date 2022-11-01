@@ -33,7 +33,7 @@ public class ProductService {
 		
 		ProductRequestDTO newProductDTO = productMapper.mapProductRequestDTO(productRepository.save(product));
 	
-		logger.info(String.format("Product %d is saved", product.getId()));
+		logger.info(String.format("Product %s is saved", product.getId()));
 		return newProductDTO;
 	}
 	

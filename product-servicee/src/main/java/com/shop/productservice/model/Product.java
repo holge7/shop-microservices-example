@@ -7,26 +7,27 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(value = "product")
 public class Product {
+	
 	@Id
-	public long id;
+	public String id;
 	public String name;
 	public String description;
 	public BigDecimal price;
 	
 	public Product() {}
 
-	public Product(long id, String name, String description, BigDecimal price) {
+	public Product(String id, String name, String description, BigDecimal price) {
 		this.id = id;
 		this.name = name;
 		this.description = description;
 		this.price = price;
 	}
 
-	public long getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
