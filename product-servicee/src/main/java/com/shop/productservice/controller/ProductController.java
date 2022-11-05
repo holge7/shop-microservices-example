@@ -36,6 +36,10 @@ public class ProductController {
 					HttpStatus.CREATED
 				);
 	}
+	@GetMapping("/test")
+	public String test() {
+		return "hola";
+	}
 	
 	@GetMapping("")
 	public ResponseEntity<ApiResponse> getAllProduct() {
