@@ -1,5 +1,6 @@
 package com.shop.apigateway.config;
 
+import org.apache.catalina.mapper.Mapper;
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,5 +13,9 @@ public class Beans {
 		return new ModelMapper();
 	}
 	
-	
+	@Bean
+	public Mapper mapper() {
+		return new Mapper();
+	}
+
 }

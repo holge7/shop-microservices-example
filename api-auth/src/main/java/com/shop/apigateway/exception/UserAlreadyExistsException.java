@@ -2,6 +2,7 @@ package com.shop.apigateway.exception;
 
 import org.springframework.http.HttpStatus;
 
+import com.shop.apigateway.dto.payload.request.SignupRequest;
 import com.shop.apigateway.model.User;
 
 public class UserAlreadyExistsException extends UserException {
@@ -14,8 +15,18 @@ public class UserAlreadyExistsException extends UserException {
 		super(msg(user), httpStatus);
 	}
 	
+	public UserAlreadyExistsException(String user) {
+		super(msg(user), httpStatus);
+	}
+	
+	private static String msg(String user) {
+		return String.format(msgString, user);		
+	}
+	
 	private static String msg(User user) {
 		return String.format(msgString, user.getEmail());		
 	}
+	
+	
 
 }

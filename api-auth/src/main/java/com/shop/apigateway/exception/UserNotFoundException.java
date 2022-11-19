@@ -14,6 +14,15 @@ public class UserNotFoundException extends UserException {
 		super(msg(user), httpStatus);
 	}
 	
+	
+	public UserNotFoundException(String user) {
+		super(msg(user), httpStatus);
+	}
+	
+	private static String msg(String user) {
+		return String.format(msgString, user);		
+	}
+	
 	private static String msg(User user) {
 		return String.format(msgString, user.getEmail());		
 	}

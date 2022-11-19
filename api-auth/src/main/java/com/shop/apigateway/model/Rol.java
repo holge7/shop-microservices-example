@@ -13,11 +13,13 @@ public class Rol {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	public long id;
-	public String rol;
+	
+	@Enumerated(EnumType.STRING)
+	public ERol rol;
 	
 	public Rol() {}
 	
-	public Rol(long id, String rol) {
+	public Rol(long id, ERol rol) {
 		this.id = id;
 		this.rol = rol;
 	}
@@ -30,12 +32,17 @@ public class Rol {
 		this.id = id;
 	}
 
-	public String getRol() {
+	public ERol getRol() {
 		return rol;
 	}
 
-	public void setRol(String rol) {
+	public void setRol(ERol rol) {
 		this.rol = rol;
+	}
+
+	@Override
+	public String toString() {
+		return "Rol [id=" + id + ", rol=" + rol + "]";
 	}
 	
 }

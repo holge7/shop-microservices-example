@@ -10,9 +10,13 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
-
+import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
+@Table(uniqueConstraints = { 
+  @UniqueConstraint(columnNames = "email") 
+})
 public class User {
 	
 	@Id
@@ -33,6 +37,11 @@ public class User {
 	public User(String email, String name, String password) {
 		this.email = email;
 		this.name = name;
+		this.password = password;
+	}
+	
+	public User(String email, String password) {
+		this.email = email;
 		this.password = password;
 	}
 
@@ -75,6 +84,14 @@ public class User {
 	public void setRol(Set<Rol> rol) {
 		this.rol = rol;
 	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", email=" + email + ", name=" + name + ", password=" + password + ", rol=" + rol
+				+ "]";
+	}
+
+	
 	
 	
 

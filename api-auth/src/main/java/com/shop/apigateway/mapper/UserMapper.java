@@ -4,6 +4,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 
 import com.shop.apigateway.dto.UserDTO;
+import com.shop.apigateway.dto.UserRegisterDTO;
 import com.shop.apigateway.model.User;
 
 @Component
@@ -17,6 +18,10 @@ public class UserMapper {
 	
 	public UserDTO userDTO(User user) {
 		return modelMapper.map(user, UserDTO.class);
+	}
+	
+	public UserRegisterDTO userRegisterDTO(User user) {
+		return modelMapper.map(user, UserRegisterDTO.class);
 	}
 	
 }

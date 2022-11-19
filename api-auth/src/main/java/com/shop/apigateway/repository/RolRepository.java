@@ -1,17 +1,17 @@
 package com.shop.apigateway.repository;
 
-import java.util.Set;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import com.google.common.base.Optional;
 import com.shop.apigateway.model.Rol;
-import com.shop.apigateway.model.Roles;
+import com.shop.apigateway.model.ERol;
 
+@Repository
 public interface RolRepository extends JpaRepository<Rol, Long> {
 
-	public Rol findByRol(Roles rol);
+	public Optional<Rol> findByRol(ERol rol);
 
-	public Rol findByRol(String string);
 
 }
