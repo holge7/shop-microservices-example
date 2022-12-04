@@ -9,7 +9,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import com.shop.apigateway.exception.UserRegisterNotValidException;
-
+/*
 @Component
 public class CustomAuthenticationManager implements AuthenticationManager {
 
@@ -38,4 +38,4 @@ public class CustomAuthenticationManager implements AuthenticationManager {
 				userDetails.getAuthorities());
 	}
 	
-}
+}*/

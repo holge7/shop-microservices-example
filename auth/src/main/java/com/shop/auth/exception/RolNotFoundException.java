@@ -1,8 +1,8 @@
-package com.shop.apigateway.exception;
+package com.shop.auth.exception;
 
 import org.springframework.http.HttpStatus;
 
-import com.shop.apigateway.model.ERol;
+import com.shop.auth.model.ERol;
 
 public class RolNotFoundException extends RolException {
 

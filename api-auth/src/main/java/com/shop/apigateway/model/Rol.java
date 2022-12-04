@@ -23,6 +23,10 @@ public class Rol {
 		this.id = id;
 		this.rol = rol;
 	}
+	
+	public Rol(ERol rol) {
+		this.rol = rol;
+	}
 
 	public long getId() {
 		return id;

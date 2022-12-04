@@ -1,9 +1,9 @@
-package com.shop.apigateway.exception;
+package com.shop.auth.exception;
 
 import org.springframework.http.HttpStatus;
 
-import com.shop.apigateway.dto.payload.request.SignupRequest;
-import com.shop.apigateway.model.User;
+import com.shop.auth.dto.payload.request.SignupRequest;
+import com.shop.auth.model.User;
 
 public class UserAlreadyExistsException extends UserException {
 	

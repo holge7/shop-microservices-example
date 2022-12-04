@@ -29,6 +29,9 @@ public class AuthEntryPointJwt implements AuthenticationEntryPoint{
 	@Override
 	public void commence(HttpServletRequest request, HttpServletResponse response,
 			AuthenticationException authException) throws IOException, ServletException {
+		System.out.println("========");
+		System.out.println("Class that will be in charge of generating an unauthorized user error");
+		System.out.println("========");
 		
 		logger.error("Unauthorized error: {}", authException.getMessage());
 		
@@ -37,7 +40,7 @@ public class AuthEntryPointJwt implements AuthenticationEntryPoint{
 
 	    final Map<String, Object> body = new HashMap<>();
 	    body.put("status", HttpServletResponse.SC_UNAUTHORIZED);
-	    body.put("error", "Unauthorized");
+	    body.put("error", "Unauthorized xd");
 	    body.put("message", authException.getMessage());
 	    body.put("path", request.getServletPath());
 

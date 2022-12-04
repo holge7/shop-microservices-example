@@ -1,4 +1,4 @@
-package com.shop.apigateway.exception;
+package com.shop.auth.exception;
 
 import org.springframework.http.HttpStatus;
 

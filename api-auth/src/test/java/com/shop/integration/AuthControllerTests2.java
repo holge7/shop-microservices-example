@@ -1,4 +1,4 @@
-package com.shop.apigateway;
+package com.shop.integration;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -33,7 +33,7 @@ import com.shop.apigateway.repository.UserRepository;
 @SpringBootTest
 @Testcontainers
 @AutoConfigureMockMvc
-public class AuthControllerTests {
+public class AuthControllerTests2 {
 	
 	@Container
 	private static final MySQLContainer mysqlContainer = new MySQLContainer("mysql:latest")

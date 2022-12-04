@@ -1,11 +1,11 @@
-package com.shop.apigateway.exception;
+package com.shop.auth.exception;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import com.shop.apigateway.util.ApiResponse;
+import com.shop.auth.util.ApiResponse;
 
 @ControllerAdvice
 public class ExceptionHandlerImpl extends ResponseEntityExceptionHandler {

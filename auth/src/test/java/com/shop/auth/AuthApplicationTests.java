@@ -1,10 +1,10 @@
-package com.shop.apigateway;
+package com.shop.auth;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApiAuthApplicationTests {
+class AuthApplicationTests {
 
 	@Test
 	void contextLoads() {

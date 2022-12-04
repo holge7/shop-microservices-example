@@ -1,4 +1,4 @@
-package com.shop.apigateway.security.jwt;
+/*package com.shop.apigateway.security.jwt;
 
 import java.io.IOException;
 
@@ -30,6 +30,9 @@ public class AuthTokenFilter extends OncePerRequestFilter {
 	@Override
 	protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
 			throws ServletException, IOException {
+		System.out.println("=============");
+		System.out.println("Hello");
+		System.out.println("=============");
 		try {
 			String jwt = parseJwt(request);
 			if (jwt != null && jwtUtils.validateJwtToken(jwt)) {
@@ -49,8 +52,6 @@ public class AuthTokenFilter extends OncePerRequestFilter {
 				//Save user in securityContext
 				SecurityContextHolder.getContext().setAuthentication(authentication);
 				logger.info(String.format("User [%s] access to [%s]", email, request.getRequestURI()));
-				logger.info("With roles :");
-				logger.info(authentication.getAuthorities());
 				
 			}
 		} catch (Exception e) {
@@ -73,3 +74,4 @@ public class AuthTokenFilter extends OncePerRequestFilter {
 	}
 
 }
+*/

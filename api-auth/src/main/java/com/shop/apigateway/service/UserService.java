@@ -17,12 +17,12 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 //import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import com.door.auth.exception.RolNotFoundException;
+import com.door.auth.exception.UserAlreadyExistsException;
 import com.shop.apigateway.dto.UserDTO;
 import com.shop.apigateway.dto.payload.request.LoginRequest;
 import com.shop.apigateway.dto.payload.request.SignupRequest;
 import com.shop.apigateway.dto.payload.response.JwtResponse;
-import com.shop.apigateway.exception.RolNotFoundException;
-import com.shop.apigateway.exception.UserAlreadyExistsException;
 import com.shop.apigateway.exception.UserNotFoundException;
 import com.shop.apigateway.mapper.UserMapper;
 import com.shop.apigateway.model.Rol;
@@ -41,7 +41,6 @@ public class UserService {
 	private RolRepository rolRepository;
 	private PasswordEncoder passwordEncoder;
 	private UserMapper userMapper;
-	private Mapper mapper;
 	private AuthenticationManager authenticationManager;
 	private JwtUtils jwtUtils;
 	
@@ -50,14 +49,12 @@ public class UserService {
 			PasswordEncoder passwordEncoder,  
 			UserMapper userMapper,
 			RolRepository rolRepository,
-			Mapper mapper,
 			AuthenticationManager authenticationManager,
 			JwtUtils jwtUtils) {
 		this.userRepository = userRepository;
 		this.passwordEncoder = passwordEncoder;
 		this.userMapper = userMapper;
 		this.rolRepository = rolRepository;
-		this.mapper = mapper;
 		this.authenticationManager = authenticationManager;
 		this.jwtUtils = jwtUtils;
 	}
@@ -70,6 +67,7 @@ public class UserService {
 		if (!userRepository.existsByEmail(userLogin.getEmail())) {
 			throw new UserNotFoundException(userLogin.getEmail());
 		}
+
 		
 		//Authenticate user
 		Authentication authentication = authenticationManager.authenticate(
